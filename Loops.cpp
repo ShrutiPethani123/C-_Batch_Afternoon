@@ -61,13 +61,46 @@ int main()
 
     // }while(k<=30);
 
-    int n=3;
-    int i=1;
-    while(i<11)
+    // int n=3;
+    // int i=1;
+    // while(i<11)
+    // {
+    //     cout<<n<<" * "<<i<<" = "<<n*i<<endl;
+    //     i++;
+    // }
+
+    // for(int i=21;i<=30;i=i+2)// i+=2
+    // {
+    //     cout<<i<<" ";
+    // }
+
+    int a = 12;
+    int b= 15;
+    int lcm;
+
+    int max = a>b? a:b;
+
+    // if(a>b)
+    // {
+    //     max=a;
+    // }else{
+    //     max=b;
+    // }
+
+    int i=max;
+    while(1)
     {
-        cout<<n<<" * "<<i<<" = "<<n*i<<endl;
-        i++;
+        if(i%a==0 && i%b==0)
+        {
+            lcm=i;
+            break;
+        }
+        i=i+max;
+
     }
+    // 15 30 45 60 ...
+
+    cout<<" lcm is: "<<lcm;
 }
 
 /*
@@ -84,5 +117,40 @@ int main()
     .
     .
     3 * 10 = 30
+
+6. count digits of number( 2345126 --> 7 )
+7. print sum of all digit ( 1234 - 10 )
+8. print reverse of digit (1563 --> 3651 )
+9. find gcd of two number.
+
+    12  --> 1 2 3 4 6 12
+    6 --> 1 2 3 6
+
+    gcd - 6
+
+    30  --> 1 2 3 5 6 10 15 30
+    15 --> 1 3 5 15
+    gcd --> 15
+
+10. find lcm of two numbers.
+
+    3   -->     3 6 9 12 15....
+    4   -->     4 8 12 16 20 ....
+
+    lcm = 12
+
+    a * b = gcd * lcm
+
+11. take one number from user and check number is prime or not ?
+
+    3 -> 1 3 
+    4 -> 1 2 4 
+
+    3 5 7 11 13 17.....
+
+12. check number is palindrom or not.
+
+    121 , 1221 13431 5665 -> palindrom
+    123 , 342 , 11113 , 456 -> not palindrom
 
 */
