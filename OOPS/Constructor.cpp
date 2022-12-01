@@ -78,3 +78,25 @@ int main()
 
 
 }
+
+/*
+
+Home Work:
+
+Make one class for Employee and Make two method getData and displayData
+
+getData- take data from user
+displayData - display all the data
+
+
+data:
+
+eid
+name
+designation
+address
+salary
+
+Make 3 employee object
+
+*/
